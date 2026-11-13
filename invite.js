@@ -88,6 +88,16 @@ function paintMotes() {
       petals.appendChild(petal);
     }
   });
+  const leaves = document.getElementById("thanks-leaves");
+  if (leaves) {
+    for (let i = 0; i < 14; i += 1) {
+      const leaf = document.createElement("i");
+      leaf.style.left = `${Math.random() * 100}%`;
+      leaf.style.animationDuration = `${8 + Math.random() * 9}s`;
+      leaf.style.animationDelay = `${-Math.random() * 12}s`;
+      leaves.appendChild(leaf);
+    }
+  }
 }
 
 function sizeFoil() {
